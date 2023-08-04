@@ -51,6 +51,7 @@ public class MainController extends HttpServlet {
 	//Dont change the above lines of code
 	
 //	Start Enterinng your code here...
+
 public static int findSum(int num){
 	int sum = 0;
 	while(num>0){
