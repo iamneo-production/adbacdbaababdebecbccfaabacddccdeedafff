@@ -60,12 +60,14 @@ public static int findSum(int num){
 	return sum;
 }
 public static int calculate(String myName, String friendName) {
-	int f1 = 0,f2 = 0, FRIENDS;
+	int f1 = 0;
+	int f2 = 0;
+	int FRIENDS;
 	for(int i = 0;i<myName.length();i++){
-		f1 += (int)myName.charAt(i);
+		f1 += myName.charAt(i);
 	}
 	for(int i =0;i<friendName.length();i++){
-		f2 += (int)friendName.charAt(i);
+		f2 += friendName.charAt(i);
 	}
 
 	FRIENDS = (f1 + f2) % 100;
