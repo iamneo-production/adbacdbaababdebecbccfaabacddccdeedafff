@@ -51,5 +51,27 @@ public class MainController extends HttpServlet {
 	//Dont change the above lines of code
 	
 //	Start Enterinng your code here...
+
+public int calculate(String name1, String name2) {
+	String combined = name1 + name2;
+	int count = 0;
+	for (int i = 0; i < "FRIENDS".length(); i++) {
+		count += countOccurrences(combined, "FRIENDS".charAt(i));
+	}
+	int total = name1.length() + name2.length();
+	int percentage = count * 100 / total;
+	return percentage;
+}
+
+// utility method to count the occurrences of a character in a string
+private int countOccurrences(String str, char ch) {
+	int count = 0;
+	for (int i = 0; i < str.length(); i++) {
+		if (str.charAt(i) == ch) {
+			count++;
+		}
+	}
+	return count;
+}
 	
 }
