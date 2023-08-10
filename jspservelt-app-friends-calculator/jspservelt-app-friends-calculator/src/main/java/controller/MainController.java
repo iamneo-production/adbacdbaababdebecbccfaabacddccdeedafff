@@ -47,7 +47,9 @@ public class MainController extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 		dispatcher.forward(request, response);
 	}
+		//Dont change the above lines of code
 	
+//	Start Enterinng your code here...
 
 
 	public int calculate(String name1, String name2) {
@@ -71,8 +73,6 @@ public class MainController extends HttpServlet {
         }
         return count;
     }
-	//Dont change the above lines of code
-	
-//	Start Enterinng your code here...
+
 	
 }
